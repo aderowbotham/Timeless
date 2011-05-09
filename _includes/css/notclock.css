@@ -1,0 +1,218 @@
+/* not:clock by Ade Rowbotham */
+
+body
+{
+    background: #000;
+    color: #f9f900;
+    margin: 0 auto auto auto;
+    padding: 0;
+    text-align: center;
+    font-family: Andale Mono, monospace;
+}
+
+#about
+{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 80px;
+    height: 20px;
+    margin-left: -80px;
+    margin-top: -20px;
+    overflow: hidden;
+    text-align: right;
+}
+
+#about a
+{
+    font-size: 14px;
+    text-decoration: none;
+    padding-right: 4px;
+    color: #c6c600;
+}
+
+#about a:hover
+{
+    color: #f9f900;
+}
+
+#clock-container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 880px;
+    height: 198px;
+    margin-left: -440px;
+    margin-top: -99px;
+    background: url('/_includes/images/display-off_24.png') no-repeat top left;
+    cursor: pointer;
+}
+
+h1
+{
+	margin: 0;
+	padding-top: 70px;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+p
+{
+	font-size: 90%;
+}
+
+a
+{
+	color: #f9f900;
+	text-decoration: underline;
+}
+
+div.segment
+{
+	background-repeat: no-repeat;
+	background-position: top left;
+	position: absolute;
+}
+
+div.display-unit
+{
+	position: absolute;
+}
+
+#displayA
+{
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+#displayB
+{
+	z-index: 2;
+	left: 127px;
+	top: 0;
+}
+
+#displayC
+{
+	z-index: 4;
+	left: 311px;
+	top: 0;
+}
+
+#displayD
+{
+	z-index: 5;
+	left: 438px;
+	top: 0;
+}
+
+#displayE
+{
+	z-index: 7;
+	left: 611px;
+	top: 0;
+}
+
+#displayF
+{
+	z-index: 8;
+	left: 738px;
+	top: 0;
+}
+
+
+
+#seperators-mins
+{
+	z-index: 3;
+	left: 262px;
+	top: 27px;
+	width: 58px;
+	height: 144px;
+	background-image: url('/_includes/images/seperators_24.png');
+}
+
+#seperators-secs
+{
+	z-index: 6;
+	left: 568px;
+	top: 27px;
+	width: 58px;
+	height: 144px;
+	background-image: url('/_includes/images/seperators_24.png');
+}
+
+
+/* segments */
+div.t
+{
+	z-index: 1;
+	left: 19px;
+	top: 0px;
+	width: 119px;
+	height: 50px;
+	background-image: url('/_includes/images/t_24.png');
+}
+
+div.tl
+{
+	z-index: 2;
+	left: 7px;
+	top: 6px;
+	width: 54px;
+	height: 104px;
+	background-image: url('/_includes/images/tl_24.png');
+}
+
+div.tr
+{
+	z-index: 3;
+	left: 89px;
+	top: 6px;
+	width: 55px;
+	height: 104px;
+	background-image: url('/_includes/images/tr_24.png');
+}
+
+div.m
+{
+	z-index: 4;
+	left: 18px;
+	top: 73px;
+	width: 108px;
+	height: 51px;
+	background-image: url('/_includes/images/m_24.png');
+}
+
+div.bl
+{
+	z-index: 5;
+	left: 0;
+	top: 87px;
+	width: 55px;
+	height: 104px;
+	background-image: url('/_includes/images/bl_24.png');
+}
+
+div.br
+{
+	z-index: 6;
+	left: 82px;
+	top: 87px;
+	width: 54px;
+	height: 104px;
+	background-image: url('/_includes/images/br_24.png');
+}
+
+div.b
+{
+	z-index: 7;
+	left: 5px;
+	top: 147px;
+	width: 119px;
+	height: 51px;
+	background-image: url('/_includes/images/b_24.png');
+}
+

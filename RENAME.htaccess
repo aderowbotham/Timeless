@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine on
+
+#minify
+RewriteRule ^_includes/css-min.css$ /_includes/php/min/?g=css [L]
+RewriteRule ^_includes/js-min.js$ /_includes/php/min/?g=js [L]
+#RewriteRule ^_includes/js-min.js$ /_includes/php/min/?g=js&debug=1 [L]
