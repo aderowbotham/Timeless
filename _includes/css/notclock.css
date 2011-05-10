@@ -73,6 +73,7 @@ div.segment
 	background-repeat: no-repeat;
 	background-position: top left;
 	position: absolute;
+	overflow: hidden;
 }
 
 div.display-unit
@@ -124,14 +125,15 @@ div.display-unit
 
 
 
-#seperators-mins
+#seperators-mins, #seperators-secs
 {
 	z-index: 3;
 	left: 262px;
 	top: 27px;
 	width: 58px;
 	height: 144px;
-	background-image: url('/_includes/images/seperators_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: -227px 0 !important;
 }
 
 #seperators-secs
@@ -139,9 +141,6 @@ div.display-unit
 	z-index: 6;
 	left: 568px;
 	top: 27px;
-	width: 58px;
-	height: 144px;
-	background-image: url('/_includes/images/seperators_24.png');
 }
 
 
@@ -153,7 +152,8 @@ div.t
 	top: 0px;
 	width: 119px;
 	height: 50px;
-	background-image: url('/_includes/images/t_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: 0 -104px !important;
 }
 
 div.tl
@@ -163,7 +163,8 @@ div.tl
 	top: 6px;
 	width: 54px;
 	height: 104px;
-	background-image: url('/_includes/images/tl_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: 0 0 !important;
 }
 
 div.tr
@@ -173,7 +174,8 @@ div.tr
 	top: 6px;
 	width: 55px;
 	height: 104px;
-	background-image: url('/_includes/images/tr_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: -54px 0 !important;
 }
 
 div.m
@@ -183,7 +185,8 @@ div.m
 	top: 73px;
 	width: 108px;
 	height: 51px;
-	background-image: url('/_includes/images/m_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: -119px -104px !important;
 }
 
 div.bl
@@ -193,7 +196,8 @@ div.bl
 	top: 87px;
 	width: 55px;
 	height: 104px;
-	background-image: url('/_includes/images/bl_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: -109px 0 !important;
 }
 
 div.br
@@ -203,7 +207,8 @@ div.br
 	top: 87px;
 	width: 54px;
 	height: 104px;
-	background-image: url('/_includes/images/br_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: -164px 0 !important;
 }
 
 div.b
@@ -213,6 +218,7 @@ div.b
 	top: 147px;
 	width: 119px;
 	height: 51px;
-	background-image: url('/_includes/images/b_24.png');
+	background-image: url('/_includes/images/segment_map.png');
+	background-position: 0 -155px !important;
 }
 
