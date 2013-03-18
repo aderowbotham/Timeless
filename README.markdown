@@ -5,9 +5,8 @@ It produces what appears to be a a malfunctioning 7-segment digital clock, where
 Setting up
 ----------
 
-The page is configured to the load the JavaScript and CSS via PHP Minify ( http://code.google.com/p/minify/ ), and in its current state requires ULR-rewriting provided in the file RENAME.htaccess, which should be renamed to .htaccess to work on an Apache web server.
-
+The page loads the collated and minified JS and CSS files `timeless-min.js` and `timeless.css`. The CSS and JS source are outside of the `deploy` directory, and I've used [Collate](https://npmjs.org/package/collate) and [SASS](http://sass-lang.com/) respectively to minify them (see the included shell scripts if you're interested in that)
 
 Demo
 ----
-There is a working demo at http://timeless.adeweb.co.uk/
+There is a working demo at [here](http://timeless.adeweb.co.uk/)
