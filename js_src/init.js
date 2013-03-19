@@ -6,7 +6,6 @@
 $(document).ready(function(){
         
         //empty container and write clock display
-    	$('#clock-container').empty();
 		$('#clock-container').html(BuildClock.buildClock());
 
 

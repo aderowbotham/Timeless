@@ -10,6 +10,12 @@ body
     font-family: Andale Mono, monospace;
 }
 
+.js #no-js-content
+{
+  //hide to avoid FOUC now JS is deffered 
+  display: none;
+}
+
 #about
 {
     position: absolute;

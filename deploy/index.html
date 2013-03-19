@@ -13,30 +13,38 @@
   	
   	<link rel="stylesheet" href="timeless.css" type="text/css" media="screen" /> 	
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
-    <script type="text/javascript" src="timeless-min.js"></script>	
-  	<script type="text/javascript">
-  	  var _gaq = _gaq || [];
-  	  _gaq.push(['_setAccount', 'UA-188815-18']);
-  	  _gaq.push(['_trackPageview']);
-
-  	  (function() {
-  	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	  })();
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.7.2.min.js"><\/script>')</script>
+    <script type="text/javascript">
+      $('html').addClass('js');
     </script>
+
   </head>
 
   <body>	
     <div id="clock-container">
-      <h1>Timeless</h1>
-      <p>Timeless is a malfunctioning digital clock, inspired by the one on platform 13 at London Bridge Railway Station. It is built in JavaScript, so if you can see this text you probably have JavaScript disabled in your browser.</p>
-      <p>Created by <a href="http://ade.rowbotham.co.uk" title="Ade Rowbotham">Ade Rowbotham</a></p>
+      <div id="no-js-content">
+        <h1>Timeless</h1>
+        <p>Timeless is a malfunctioning digital clock, inspired by the one on platform 13 at London Bridge Railway Station. It is built in JavaScript, so if you can see this text you probably have JavaScript disabled in your browser.</p>
+        <p>Created by <a href="http://ade.rowbotham.co.uk" title="Ade Rowbotham">Ade Rowbotham</a></p>
+      </div>
     </div>
 
     <div id="about">
       <a href="http://design.aderowbotham.com/2011/03/timeless/" title="Timeless is a malfunctioning digital clock, inspired by the one on platform 13 at London Bridge Railway Station.">?</a>
     </div>
+   
+    <script type="text/javascript" src="timeless-min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-188815-18']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
   </body>
 </html>
