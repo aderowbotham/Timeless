@@ -9,4 +9,4 @@ The page loads the collated and minified JS and CSS files `timeless-min.js` and 
 
 Demo
 ----
-There is a working demo at [here](http://timeless.adeweb.co.uk/)
+There is a working demo at [here](https://dev.adeweb.co.uk/timeless/)
